@@ -103,7 +103,12 @@ An iOS app which allows UCSD students to share and read posts about renting apar
 ### Models
 Post
 |Property|Type|Description|
-|--------|----|-----------|
+|---|---|---|
+|Title|String|The title of the post, users should define if they are looking for a house or roommate|
+|Description|String|Description of the house or roommate|
+|Image|File|Image of the house or roommate|
+
+|User-Name|String|User-name of the original poster|
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
