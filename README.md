@@ -47,8 +47,8 @@ An iOS app which allows UCSD students to share and read posts about renting apar
 * Stay logged in across restarts
 
 ### 2. Screen Archetypes
-*Login
-   *User signs up or logs into their account
+* Login
+   * User signs up or logs into their account
 * Home screen 
    * User can scroll and see the posts.
    * User can search for a post using a keyword.
