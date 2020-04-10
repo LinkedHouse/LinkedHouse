@@ -132,6 +132,16 @@ An iOS app which allows UCSD students to share and read posts about renting apar
   * (Update/PUT) Edit an existing comment
   * (Delete) Delete an existing comment
   * (Read/GET) Fetch data of the original poster
+    let query = PFQuery(className:"Post")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+    if let error = error { 
+      print(error.localizedDescription)
+    } else if let posts = posts {
+        print("Successfully retrieved \(posts.count) posts.")
+      }
+    }
 * New Post Page
   * (Create/POST) Create a new Post object
 * Profile Page
