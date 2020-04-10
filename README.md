@@ -61,7 +61,7 @@ An iOS app which allows UCSD students to share and read posts about renting apar
    * User can provide a description for the item.
    * User can post the information to the feeds.
    * User can navigate back to Home screen.
-* Post Screen
+* PostDetail Screen
    * User can see the detailed information.
    * User can see the image.
    * User can navigate back to Home screen.
@@ -72,18 +72,24 @@ An iOS app which allows UCSD students to share and read posts about renting apar
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* PostDetail
+* Profile
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login Screen
+   * Home Screen
+* Home Screen
+   * Profile Screen
+   * MakePost Screen 
+   * PostDetail Screen
+* Profile Screen
+   * Home Screen
+* PostDetail Screen
+   * Home Screen
+* MakePost Screen
+   * Home Screen 
+  
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
