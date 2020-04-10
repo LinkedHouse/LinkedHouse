@@ -14,12 +14,12 @@ Group Project - README Template
 An iOS app which allows UCSD students to share and read posts about renting apartments and finding roommates.
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category: Lifestyle
-- **Mobile: This app would be primarily developed for mobile.
-- **Story: Allow users share and read posts about renting apartments and finding roommates
-- **Market: College students looking for a roommate or an off-campus apartment
-- **Habit: Users can develop the habbit of using this app whenever they want to find a new roommate or rent a new apartment, instead of using facebook or other social media apps.
-- **Scope: This app will target at UCSD students for now. In the future, it may be expanded to more campuses.
+- Category: Lifestyle
+- Mobile: This app would be primarily developed for mobile.
+- Story: Allow users share and read posts about renting apartments and finding roommates
+- Market: College students looking for a roommate or an off-campus apartment
+- Habit: Users can develop the habbit of using this app whenever they want to find a new roommate or rent a new apartment, instead of using facebook or other social media apps.
+- Scope: This app will target at UCSD students for now. In the future, it may be expanded to more campuses.
 
 ## Product Spec
 
