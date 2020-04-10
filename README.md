@@ -101,7 +101,7 @@ An iOS app which allows UCSD students to share and read posts about renting apar
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-Post
+**Post**
 |Property|Type|Description|
 |---|---|---|
 |Title|String|The title of the post, users should define if they are looking for a house or roommate|
@@ -111,7 +111,7 @@ Post
 |Author|Pointer to User|The original poster of the post|
 |Comment|String|Comments to the post made by other users|
 
-User
+**User**
 |Property|Type|Description|
 |---|---|---|
 |User-name|String|Account user name|
