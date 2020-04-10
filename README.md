@@ -101,7 +101,9 @@ An iOS app which allows UCSD students to share and read posts about renting apar
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+Post
+|Property|Type|Description|
+|--------|----|-----------|
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
