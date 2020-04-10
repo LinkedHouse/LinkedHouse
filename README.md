@@ -92,7 +92,6 @@ An iOS app which allows UCSD students to share and read posts about renting apar
   
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 <img src="outline.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
