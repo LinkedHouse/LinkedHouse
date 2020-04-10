@@ -121,6 +121,20 @@ An iOS app which allows UCSD students to share and read posts about renting apar
 |Description|String|Description of the house or the roommate|
 
 ### Networking
-- [Add list of network requests by screen ]
+**List of network requests by screen**
+* LoginScreen
+  * (Read/GET)Query user data when login in
+* HomePage
+  * (Read/GET) Query Post object to fetch post detail for a user's post
+  * (Update/PUT) Change posts displayed on the HomePage based on the user's keyword serach
+* Post Detail Page
+  * (Create/POST) Post a new comment
+  * (Update/PUT) Edit an existing comment
+  * (Delete) Delete an existing comment
+  * (Read/GET) Fetch data of the original poster
+* New Post Page
+  * (Create/POST) Create a new Post object
+* Profile Page
+  * (Update/PUT) Update personal information such as profile picture
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
