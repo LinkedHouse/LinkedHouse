@@ -107,8 +107,19 @@ Post
 |Title|String|The title of the post, users should define if they are looking for a house or roommate|
 |Description|String|Description of the house or roommate|
 |Image|File|Image of the house or roommate|
+|Date|DateTime|The date of the post being posted|
+|Author|Pointer to User|The original poster of the post|
+|Comment|String|Comments to the post made by other users|
 
-|User-Name|String|User-name of the original poster|
+User
+|Property|Type|Description|
+|---|---|---|
+|User-name|String|Account user name|
+|Password|String|Account password|
+|Userid|Number|an unique id to represent an user|
+|Profile picture|File|Profile picture of the user|
+|Description|String|Description of the house or the roommate|
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
