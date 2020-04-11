@@ -11,7 +11,7 @@ Group Project - README Template
 
 ## Overview
 ### Description
-An iOS app which allows UCSD students to share and read posts about renting apartments and finding roommates.
+An iOS app that allows UCSD students to share and read posts about renting apartments and finding roommates.
 ### App Evaluation
 [Evaluation of your app across the following attributes]
 - Category: Lifestyle
