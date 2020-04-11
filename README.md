@@ -148,5 +148,4 @@ An iOS app which allows UCSD students to share and read posts about renting apar
   * (Create/POST) Create a new Post object
 * Profile Page
   * (Update/PUT) Update personal information such as profile picture
-- [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
