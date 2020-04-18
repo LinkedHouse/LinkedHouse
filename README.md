@@ -150,4 +150,4 @@ An iOS app that allows UCSD students to share and read posts about renting apart
   * (Update/PUT) Update personal information such as profile picture
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 ## Sprint 1
-<img src='https://recordit.co/acB8wYyr2G' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/acB8wYyr2G.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
