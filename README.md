@@ -27,7 +27,7 @@ An iOS app that allows UCSD students to share and read posts about renting apart
 
 **Required Must-have Stories**
 
-* Log in and log out
+x Log in and log out
 * Make a post
 * Provide a title for the post
 * Provide a description for the post
