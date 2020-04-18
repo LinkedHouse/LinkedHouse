@@ -3,18 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B72459E244BA6A600F996B7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B72459D244BA6A600F996B7 /* LoginViewController.swift */; };
+		0B7245A0244BA6BD00F996B7 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B72459F244BA6BD00F996B7 /* FeedViewController.swift */; };
+		0B7245A2244BABCB00F996B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7245A1244BABCB00F996B7 /* Assets.xcassets */; };
 		0B84B045244BA0C0005D9E01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84B044244BA0C0005D9E01 /* AppDelegate.swift */; };
 		0B84B047244BA0C0005D9E01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84B046244BA0C0005D9E01 /* SceneDelegate.swift */; };
-		0B84B049244BA0C0005D9E01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84B048244BA0C0005D9E01 /* ViewController.swift */; };
 		0B84B04C244BA0C0005D9E01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B84B04A244BA0C0005D9E01 /* Main.storyboard */; };
-		0B84B04E244BA0C5005D9E01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B84B04D244BA0C5005D9E01 /* Assets.xcassets */; };
 		0B84B051244BA0C5005D9E01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B84B04F244BA0C5005D9E01 /* LaunchScreen.storyboard */; };
 		0B84B05C244BA0C6005D9E01 /* LinkedHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84B05B244BA0C6005D9E01 /* LinkedHouseTests.swift */; };
 		0B84B067244BA0C6005D9E01 /* LinkedHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84B066244BA0C6005D9E01 /* LinkedHouseUITests.swift */; };
+		1FFF81F30285B36AEBDFECF0 /* Pods_LinkedHouseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B86AE57F4007242602A77B2 /* Pods_LinkedHouseTests.framework */; };
+		8244B5733A57DF9FD72247B1 /* Pods_LinkedHouse_LinkedHouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0131D6A2DEFB553A73857964 /* Pods_LinkedHouse_LinkedHouseUITests.framework */; };
+		EF78C00D61CEF1F4D6917015 /* Pods_LinkedHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE3F82CC85DF5CA300B287A /* Pods_LinkedHouse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0131D6A2DEFB553A73857964 /* Pods_LinkedHouse_LinkedHouseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkedHouse_LinkedHouseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B72459D244BA6A600F996B7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0B72459F244BA6BD00F996B7 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		0B7245A1244BABCB00F996B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B84B041244BA0C0005D9E01 /* LinkedHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B84B044244BA0C0005D9E01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B84B046244BA0C0005D9E01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0B84B048244BA0C0005D9E01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B84B04B244BA0C0005D9E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0B84B04D244BA0C5005D9E01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B84B050244BA0C5005D9E01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B84B052244BA0C5005D9E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B84B057244BA0C6005D9E01 /* LinkedHouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedHouseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +55,14 @@
 		0B84B062244BA0C6005D9E01 /* LinkedHouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedHouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B84B066244BA0C6005D9E01 /* LinkedHouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedHouseUITests.swift; sourceTree = "<group>"; };
 		0B84B068244BA0C6005D9E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AE3F82CC85DF5CA300B287A /* Pods_LinkedHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkedHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B86AE57F4007242602A77B2 /* Pods_LinkedHouseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkedHouseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7833B1815A09B5823223118C /* Pods-LinkedHouseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedHouseTests.debug.xcconfig"; path = "Target Support Files/Pods-LinkedHouseTests/Pods-LinkedHouseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F26C2ECC7B24507811BBC21 /* Pods-LinkedHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedHouse.release.xcconfig"; path = "Target Support Files/Pods-LinkedHouse/Pods-LinkedHouse.release.xcconfig"; sourceTree = "<group>"; };
+		C109D170917A5DD9B29BC3AF /* Pods-LinkedHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedHouse.debug.xcconfig"; path = "Target Support Files/Pods-LinkedHouse/Pods-LinkedHouse.debug.xcconfig"; sourceTree = "<group>"; };
+		C407D277C0FDC91D26FC8492 /* Pods-LinkedHouse-LinkedHouseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedHouse-LinkedHouseUITests.debug.xcconfig"; path = "Target Support Files/Pods-LinkedHouse-LinkedHouseUITests/Pods-LinkedHouse-LinkedHouseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBEDEACAFF6616426ECA7A91 /* Pods-LinkedHouse-LinkedHouseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedHouse-LinkedHouseUITests.release.xcconfig"; path = "Target Support Files/Pods-LinkedHouse-LinkedHouseUITests/Pods-LinkedHouse-LinkedHouseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F0CFD1299C7039A11EAD1142 /* Pods-LinkedHouseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedHouseTests.release.xcconfig"; path = "Target Support Files/Pods-LinkedHouseTests/Pods-LinkedHouseTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF78C00D61CEF1F4D6917015 /* Pods_LinkedHouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FFF81F30285B36AEBDFECF0 /* Pods_LinkedHouseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8244B5733A57DF9FD72247B1 /* Pods_LinkedHouse_LinkedHouseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,8 @@
 				0B84B05A244BA0C6005D9E01 /* LinkedHouseTests */,
 				0B84B065244BA0C6005D9E01 /* LinkedHouseUITests */,
 				0B84B042244BA0C0005D9E01 /* Products */,
+				C48E4CFA9E4C68536AA43913 /* Pods */,
+				5A357DCD650C37FA52778A4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +120,12 @@
 			children = (
 				0B84B044244BA0C0005D9E01 /* AppDelegate.swift */,
 				0B84B046244BA0C0005D9E01 /* SceneDelegate.swift */,
-				0B84B048244BA0C0005D9E01 /* ViewController.swift */,
+				0B7245A1244BABCB00F996B7 /* Assets.xcassets */,
 				0B84B04A244BA0C0005D9E01 /* Main.storyboard */,
-				0B84B04D244BA0C5005D9E01 /* Assets.xcassets */,
 				0B84B04F244BA0C5005D9E01 /* LaunchScreen.storyboard */,
 				0B84B052244BA0C5005D9E01 /* Info.plist */,
+				0B72459D244BA6A600F996B7 /* LoginViewController.swift */,
+				0B72459F244BA6BD00F996B7 /* FeedViewController.swift */,
 			);
 			path = LinkedHouse;
 			sourceTree = "<group>";
@@ -128,6 +148,29 @@
 			path = LinkedHouseUITests;
 			sourceTree = "<group>";
 		};
+		5A357DCD650C37FA52778A4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AE3F82CC85DF5CA300B287A /* Pods_LinkedHouse.framework */,
+				0131D6A2DEFB553A73857964 /* Pods_LinkedHouse_LinkedHouseUITests.framework */,
+				5B86AE57F4007242602A77B2 /* Pods_LinkedHouseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C48E4CFA9E4C68536AA43913 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C109D170917A5DD9B29BC3AF /* Pods-LinkedHouse.debug.xcconfig */,
+				8F26C2ECC7B24507811BBC21 /* Pods-LinkedHouse.release.xcconfig */,
+				C407D277C0FDC91D26FC8492 /* Pods-LinkedHouse-LinkedHouseUITests.debug.xcconfig */,
+				DBEDEACAFF6616426ECA7A91 /* Pods-LinkedHouse-LinkedHouseUITests.release.xcconfig */,
+				7833B1815A09B5823223118C /* Pods-LinkedHouseTests.debug.xcconfig */,
+				F0CFD1299C7039A11EAD1142 /* Pods-LinkedHouseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B84B06B244BA0C6005D9E01 /* Build configuration list for PBXNativeTarget "LinkedHouse" */;
 			buildPhases = (
+				7CB0E2108BD9F4E2B607F01D /* [CP] Check Pods Manifest.lock */,
 				0B84B03D244BA0C0005D9E01 /* Sources */,
 				0B84B03E244BA0C0005D9E01 /* Frameworks */,
 				0B84B03F244BA0C0005D9E01 /* Resources */,
+				C79E649A7AC2624AE641D66E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B84B06E244BA0C6005D9E01 /* Build configuration list for PBXNativeTarget "LinkedHouseTests" */;
 			buildPhases = (
+				B63E8613169B674A9A65D32B /* [CP] Check Pods Manifest.lock */,
 				0B84B053244BA0C6005D9E01 /* Sources */,
 				0B84B054244BA0C6005D9E01 /* Frameworks */,
 				0B84B055244BA0C6005D9E01 /* Resources */,
@@ -170,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B84B071244BA0C6005D9E01 /* Build configuration list for PBXNativeTarget "LinkedHouseUITests" */;
 			buildPhases = (
+				B91F5C14888489A5B652CBBC /* [CP] Check Pods Manifest.lock */,
 				0B84B05E244BA0C6005D9E01 /* Sources */,
 				0B84B05F244BA0C6005D9E01 /* Frameworks */,
 				0B84B060244BA0C6005D9E01 /* Resources */,
+				E2406321F33DD728BD99D572 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B84B051244BA0C5005D9E01 /* LaunchScreen.storyboard in Resources */,
-				0B84B04E244BA0C5005D9E01 /* Assets.xcassets in Resources */,
+				0B7245A2244BABCB00F996B7 /* Assets.xcassets in Resources */,
 				0B84B04C244BA0C0005D9E01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +302,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7CB0E2108BD9F4E2B607F01D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LinkedHouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B63E8613169B674A9A65D32B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LinkedHouseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B91F5C14888489A5B652CBBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LinkedHouse-LinkedHouseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C79E649A7AC2624AE641D66E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinkedHouse/Pods-LinkedHouse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinkedHouse/Pods-LinkedHouse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LinkedHouse/Pods-LinkedHouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2406321F33DD728BD99D572 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinkedHouse-LinkedHouseUITests/Pods-LinkedHouse-LinkedHouseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinkedHouse-LinkedHouseUITests/Pods-LinkedHouse-LinkedHouseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LinkedHouse-LinkedHouseUITests/Pods-LinkedHouse-LinkedHouseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0B84B03D244BA0C0005D9E01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B84B049244BA0C0005D9E01 /* ViewController.swift in Sources */,
+				0B72459E244BA6A600F996B7 /* LoginViewController.swift in Sources */,
 				0B84B045244BA0C0005D9E01 /* AppDelegate.swift in Sources */,
+				0B7245A0244BA6BD00F996B7 /* FeedViewController.swift in Sources */,
 				0B84B047244BA0C0005D9E01 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +584,7 @@
 		};
 		0B84B06C244BA0C6005D9E01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C109D170917A5DD9B29BC3AF /* Pods-LinkedHouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +602,7 @@
 		};
 		0B84B06D244BA0C6005D9E01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F26C2ECC7B24507811BBC21 /* Pods-LinkedHouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +620,7 @@
 		};
 		0B84B06F244BA0C6005D9E01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7833B1815A09B5823223118C /* Pods-LinkedHouseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +642,7 @@
 		};
 		0B84B070244BA0C6005D9E01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0CFD1299C7039A11EAD1142 /* Pods-LinkedHouseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +664,7 @@
 		};
 		0B84B072244BA0C6005D9E01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C407D277C0FDC91D26FC8492 /* Pods-LinkedHouse-LinkedHouseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +684,7 @@
 		};
 		0B84B073244BA0C6005D9E01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBEDEACAFF6616426ECA7A91 /* Pods-LinkedHouse-LinkedHouseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
