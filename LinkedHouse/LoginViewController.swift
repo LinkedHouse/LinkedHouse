@@ -21,9 +21,10 @@ class LoginViewController: UIViewController {
     }
     
 
-    @IBAction func onSIgnIn(_ sender: Any) {
+    @IBAction func onSignIn(_ sender: Any) {
         let username = usernamefield.text!
         let password = passwordfield.text!
+        
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
             if user != nil{
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
@@ -40,6 +41,7 @@ class LoginViewController: UIViewController {
         let user = PFUser()
         user.username = usernamefield.text
         user.password = passwordfield.text
+        user.setObject("hhh", forKey: "Intro")
         user.signUpInBackground{(success, error) in
             if success{
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
