@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -14,10 +15,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        if PFUser.current() != nil{
+            //get the main storyboard
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            //get the feed navigation controller
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+            //set the current window to the feedNavigation Controller without animation
+            window?.rootViewController = feedNavigationController
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
