@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class FeedViewController: UIViewController {
 
@@ -17,6 +18,13 @@ class FeedViewController: UIViewController {
     }
     
 
+    @IBAction func onLogout(_ sender: Any) {
+        PFUser.logOut();
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(identifier: "loginViewController")
+        let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
+        delegate.window?.rootViewController = loginViewController
+    }
     /*
     // MARK: - Navigation
 
