@@ -18,6 +18,7 @@
 		0B84B05C244BA0C6005D9E01 /* LinkedHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84B05B244BA0C6005D9E01 /* LinkedHouseTests.swift */; };
 		0B84B067244BA0C6005D9E01 /* LinkedHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B84B066244BA0C6005D9E01 /* LinkedHouseUITests.swift */; };
 		1FFF81F30285B36AEBDFECF0 /* Pods_LinkedHouseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B86AE57F4007242602A77B2 /* Pods_LinkedHouseTests.framework */; };
+		4DB2A318245259CD0045AF27 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB2A317245259CD0045AF27 /* NewPostViewController.swift */; };
 		8244B5733A57DF9FD72247B1 /* Pods_LinkedHouse_LinkedHouseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0131D6A2DEFB553A73857964 /* Pods_LinkedHouse_LinkedHouseUITests.framework */; };
 		EF78C00D61CEF1F4D6917015 /* Pods_LinkedHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AE3F82CC85DF5CA300B287A /* Pods_LinkedHouse.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		0B84B066244BA0C6005D9E01 /* LinkedHouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedHouseUITests.swift; sourceTree = "<group>"; };
 		0B84B068244BA0C6005D9E01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AE3F82CC85DF5CA300B287A /* Pods_LinkedHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkedHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DB2A317245259CD0045AF27 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		5B86AE57F4007242602A77B2 /* Pods_LinkedHouseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkedHouseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7833B1815A09B5823223118C /* Pods-LinkedHouseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedHouseTests.debug.xcconfig"; path = "Target Support Files/Pods-LinkedHouseTests/Pods-LinkedHouseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F26C2ECC7B24507811BBC21 /* Pods-LinkedHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedHouse.release.xcconfig"; path = "Target Support Files/Pods-LinkedHouse/Pods-LinkedHouse.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				0B72459D244BA6A600F996B7 /* LoginViewController.swift */,
 				0B72459F244BA6BD00F996B7 /* FeedViewController.swift */,
 				0B7245A3244BEAE800F996B7 /* EditProfileViewController.swift */,
+				4DB2A317245259CD0045AF27 /* NewPostViewController.swift */,
 			);
 			path = LinkedHouse;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				0B7245A0244BA6BD00F996B7 /* FeedViewController.swift in Sources */,
 				0B7245A4244BEAE800F996B7 /* EditProfileViewController.swift in Sources */,
 				0B84B047244BA0C0005D9E01 /* SceneDelegate.swift in Sources */,
+				4DB2A318245259CD0045AF27 /* NewPostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

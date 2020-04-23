@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -105,7 +105,11 @@
                                 <items>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Jc8-2r-dTa"/>
                                     <barButtonItem title="Posts" width="141" id="N4E-Wq-Rdo"/>
-                                    <barButtonItem title="New" id="NUZ-LL-J2f"/>
+                                    <barButtonItem title="New" id="NUZ-LL-J2f">
+                                        <connections>
+                                            <segue destination="LHZ-u6-vYO" kind="presentation" id="teM-c3-oIj"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="40" style="plain" systemItem="fixedSpace" id="QYW-Kb-2JO"/>
                                     <barButtonItem title="Profile" id="tPC-VH-hSZ">
                                         <connections>
@@ -190,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vub-L3-nJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3582.608695652174" y="23.4375"/>
+            <point key="canvasLocation" x="4492.753623188406" y="23.4375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Ki-MU-ppA">
@@ -210,6 +214,65 @@
             </objects>
             <point key="canvasLocation" x="1015.9420289855074" y="113.83928571428571"/>
         </scene>
+        <!--New Post View Controller-->
+        <scene sceneID="L96-wS-cxa">
+            <objects>
+                <viewController id="cDA-li-w7J" customClass="NewPostViewController" customModule="LinkedHouse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gED-sS-NPf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="sBa-9X-Kt9">
+                                <rect key="frame" x="20" y="143" width="343" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="X1X-Lv-JUR" appends="YES" id="C6C-oi-eMy"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="So1-OC-OeS">
+                                <rect key="frame" x="20" y="419" width="343" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dcl-pR-3rx">
+                                <rect key="frame" x="20" y="83" width="343" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Zer-Iq-QYj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q6a-St-wbV">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="uPP-KN-uhu">
+                            <connections>
+                                <action selector="cancelButton:" destination="cDA-li-w7J" id="n3D-J1-P0B"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="X43-9O-Nmn">
+                            <connections>
+                                <action selector="postButton:" destination="cDA-li-w7J" id="xqi-5C-kun"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="postDescription" destination="So1-OC-OeS" id="uoX-61-5nq"/>
+                        <outlet property="postTitle" destination="Dcl-pR-3rx" id="OUH-Ux-RCo"/>
+                        <outlet property="postimage" destination="sBa-9X-Kt9" id="5Cn-xA-fhS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BY8-zr-Mlb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="X1X-Lv-JUR">
+                    <connections>
+                        <action selector="onCameraButton:" destination="cDA-li-w7J" id="qUs-Dx-tTS"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3031.884057971015" y="-607.36607142857144"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="YAR-GQ-KN3">
             <objects>
@@ -226,7 +289,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZD-ph-HuD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2672.4637681159425" y="23.4375"/>
+            <point key="canvasLocation" x="3663.7681159420295" y="22.767857142857142"/>
         </scene>
         <!--My Profile-->
         <scene sceneID="By8-Ra-SDZ">
@@ -290,11 +353,30 @@
             </objects>
             <point key="canvasLocation" x="3256.521739130435" y="668.97321428571422"/>
         </scene>
+        <!--New Post Navigation Controller-->
+        <scene sceneID="1j7-cf-eYT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LHZ-u6-vYO" userLabel="New Post Navigation Controller" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XSx-JE-8gU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cDA-li-w7J" kind="relationship" relationship="rootViewController" id="rAg-wM-4fJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rr1-oU-Uqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2121.739130434783" y="-607.36607142857144"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vnb-zH-B4e"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="image" width="128" height="128"/>
         <image name="logo" width="477" height="174"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="c3F-W4-HiL"/>
-    </inferredMetricsTieBreakers>
 </document>
