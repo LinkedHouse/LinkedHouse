@@ -151,6 +151,7 @@ An iOS app that allows UCSD students to share and read posts about renting apart
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 ## Sprint 1
 <img src='http://g.recordit.co/87uBUWMuDb.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ## Sprint 2
 <img src='http://g.recordit.co/N0rcATxgWm.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
