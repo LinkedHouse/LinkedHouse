@@ -21,22 +21,23 @@ class LoginViewController: UIViewController {
     }
     
 
-    @IBAction func onSignIn(_ sender: Any) {
+    @IBAction func onSignin(_ sender: Any) {
         let username = usernamefield.text!
-        let password = passwordfield.text!
-        
-        PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
-            if user != nil{
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
-            }
-            else{
-                self.errorfield.text = error?.localizedDescription
-                print("Error: \(error?.localizedDescription)")
-            }
-        }
-        
+               let password = passwordfield.text!
+               
+               PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+                   if user != nil{
+                       self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                   }
+                   else{
+                       self.errorfield.text = error?.localizedDescription
+                       print("Error: \(error?.localizedDescription)")
+                   }
+               }
+               
 
     }
+    
     @IBAction func onSignUp(_ sender: Any) {
         let user = PFUser()
         user.username = usernamefield.text
