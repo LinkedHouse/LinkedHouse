@@ -277,7 +277,6 @@
                         <barButtonItem key="rightBarButtonItem" title="Cancel" id="20z-qx-ecJ">
                             <connections>
                                 <action selector="cancelButtonTapped:" destination="1RA-cI-frA" id="G2I-ae-eUD"/>
-                                <segue destination="ImI-de-q7C" kind="presentation" id="c3F-W4-HiL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -348,9 +347,8 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veY-VW-F2u">
                                 <rect key="frame" x="336" y="407" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Edit"/>
                                 <connections>
-                                    <segue destination="nSU-HR-lpt" kind="presentation" id="aHW-pX-kNW"/>
+                                    <segue destination="nSU-HR-lpt" kind="presentation" identifier="toEdit" id="aHW-pX-kNW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFL-fk-mCK">
@@ -386,7 +384,6 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="kew-9P-uyN" kind="relationship" relationship="rootViewController" id="3QL-2W-qM0"/>
-                        <segue destination="bxf-gh-zyi" kind="presentation" identifier="backHome" id="MBO-Za-HFg"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IjQ-QB-Kw4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -415,9 +412,4 @@
     <resources>
         <image name="logo" width="477" height="174"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="aHW-pX-kNW"/>
-        <segue reference="c3F-W4-HiL"/>
-        <segue reference="MBO-Za-HFg"/>
-    </inferredMetricsTieBreakers>
 </document>

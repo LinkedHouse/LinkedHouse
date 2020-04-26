@@ -13,7 +13,9 @@ class ProfileViewController: UIViewController {
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var IntroLabel: UILabel!
-    
+    override func viewDidAppear(_ animated: Bool) {
+        viewDidLoad()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true;
@@ -57,7 +59,7 @@ class ProfileViewController: UIViewController {
     let nameLabel: UILabel = {
            let label = UILabel()
            label.textAlignment = .center
-           label.text = PFUser.current()?.object(forKey: "username") as! String
+        label.text = PFUser.current()?.object(forKey: "username") as? String
            label.font = UIFont.boldSystemFont(ofSize: 26)
            label.textColor = .white
            return label
@@ -65,18 +67,23 @@ class ProfileViewController: UIViewController {
     let editButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(#imageLiteral(resourceName: "edit").withRenderingMode(.alwaysOriginal), for: .normal)
-        //button.addTarget(self, action: #selector(handleEdit), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleEdit(sender:)), for: .touchUpInside)
         return button
     }()
     
     let backButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(#imageLiteral(resourceName: "icons8-back-50").withRenderingMode(.alwaysOriginal), for: .normal)
-        //button.addTarget(self, action: #selector(handleBack(_:)), for: .touchUpInside)
+        button.addTarget(self, action:#selector(handleBack(sender:)), for: .touchUpInside)
         return button
     }()
    
-    
+    @objc func handleEdit(sender: UIButton) {
+        self.performSegue(withIdentifier: "toEdit", sender: self)
+    }
+    @objc func handleBack(sender: UIButton) {
+        self.performSegue(withIdentifier: "toEdit", sender: self)
+    }
     /*
     // MARK: - Navigation
 
