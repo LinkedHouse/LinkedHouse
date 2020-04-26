@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B1934AC2455E86D00295FBF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1934AB2455E86D00295FBF /* ProfileViewController.swift */; };
 		0B72459E244BA6A600F996B7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B72459D244BA6A600F996B7 /* LoginViewController.swift */; };
 		0B7245A0244BA6BD00F996B7 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B72459F244BA6BD00F996B7 /* FeedViewController.swift */; };
 		0B7245A2244BABCB00F996B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B7245A1244BABCB00F996B7 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		0131D6A2DEFB553A73857964 /* Pods_LinkedHouse_LinkedHouseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkedHouse_LinkedHouseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B1934AB2455E86D00295FBF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0B72459D244BA6A600F996B7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0B72459F244BA6BD00F996B7 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0B7245A1244BABCB00F996B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				0B72459F244BA6BD00F996B7 /* FeedViewController.swift */,
 				0B7245A3244BEAE800F996B7 /* EditProfileViewController.swift */,
 				4DB2A32524554B9C0045AF27 /* NewPostViewController.swift */,
+				0B1934AB2455E86D00295FBF /* ProfileViewController.swift */,
 			);
 			path = LinkedHouse;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				0B84B045244BA0C0005D9E01 /* AppDelegate.swift in Sources */,
 				0B7245A0244BA6BD00F996B7 /* FeedViewController.swift in Sources */,
 				0B7245A4244BEAE800F996B7 /* EditProfileViewController.swift in Sources */,
+				0B1934AC2455E86D00295FBF /* ProfileViewController.swift in Sources */,
 				0B84B047244BA0C0005D9E01 /* SceneDelegate.swift in Sources */,
 				4DB2A32624554B9C0045AF27 /* NewPostViewController.swift in Sources */,
 			);
