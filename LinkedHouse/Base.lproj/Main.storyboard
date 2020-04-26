@@ -288,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vub-L3-nJh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2587" y="2918"/>
+            <point key="canvasLocation" x="2636" y="3171"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Ki-MU-ppA">
@@ -324,9 +324,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZD-ph-HuD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2587" y="2210"/>
+            <point key="canvasLocation" x="2614" y="2380"/>
         </scene>
-        <!--My Profile-->
+        <!--Profile View Controller-->
         <scene sceneID="By8-Ra-SDZ">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="kew-9P-uyN" customClass="ProfileViewController" customModule="LinkedHouse" customModuleProvider="target" sceneMemberID="viewController">
@@ -335,36 +335,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdq-av-EJN">
-                                <rect key="frame" x="70" y="393" width="75" height="21"/>
+                                <rect key="frame" x="29" y="322" width="117" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFL-fk-mCK">
-                                <rect key="frame" x="70" y="448" width="303" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.46218127009999999" green="0.3426464796" blue="0.80004042389999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.46218127009999999" green="0.3426464796" blue="0.80004042389999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xKP-7W-T1O">
-                                <rect key="frame" x="112" y="176" width="191" height="182"/>
+                                <rect key="frame" x="112" y="115" width="191" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veY-VW-F2u">
-                                <rect key="frame" x="335" y="128" width="30" height="30"/>
+                                <rect key="frame" x="336" y="407" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Edit"/>
                                 <connections>
                                     <segue destination="nSU-HR-lpt" kind="presentation" id="aHW-pX-kNW"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFL-fk-mCK">
+                                <rect key="frame" x="29" y="364" width="303" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hrS-fi-Dha"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My Profile" id="2QF-c9-j9g"/>
+                    <navigationItem key="navigationItem" id="2QF-c9-j9g"/>
                     <connections>
                         <outlet property="IntroLabel" destination="VFL-fk-mCK" id="fpC-aH-791"/>
                         <outlet property="profileImageView" destination="xKP-7W-T1O" id="gvK-FR-ggX"/>
@@ -372,7 +372,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OwR-GB-XSL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2587" y="1538"/>
+            <point key="canvasLocation" x="2587" y="1586"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uhX-KN-6gF">
@@ -386,6 +386,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="kew-9P-uyN" kind="relationship" relationship="rootViewController" id="3QL-2W-qM0"/>
+                        <segue destination="bxf-gh-zyi" kind="presentation" identifier="backHome" id="MBO-Za-HFg"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IjQ-QB-Kw4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -415,6 +416,8 @@
         <image name="logo" width="477" height="174"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vnb-zH-B4e"/>
+        <segue reference="aHW-pX-kNW"/>
+        <segue reference="c3F-W4-HiL"/>
+        <segue reference="MBO-Za-HFg"/>
     </inferredMetricsTieBreakers>
 </document>
