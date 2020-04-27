@@ -41,7 +41,7 @@ class NewPostViewController: UIViewController, UINavigationControllerDelegate, U
             }
         }
     }
-    
+   
     @IBAction func onCameraButton(_ sender: Any) {
         let picker = UIImagePickerController()
         picker.delegate = self

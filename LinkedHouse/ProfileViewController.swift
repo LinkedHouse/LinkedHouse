@@ -19,8 +19,10 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true;
-        let Introduction = PFUser.current()?.object(forKey: "Intro") as! String
-        IntroLabel.text = Introduction
+        if(PFUser.current()?.object(forKey: "Intro") != nil){
+            let Introduction = PFUser.current()?.object(forKey: "Intro") as! String
+            IntroLabel.text = Introduction
+        }
         if(PFUser.current()?.object(forKey: "image") != nil){
             let imageFile = PFUser.current()?.object(forKey: "image")as! PFFileObject
             let urlString = imageFile.url!
@@ -59,7 +61,7 @@ class ProfileViewController: UIViewController {
     let nameLabel: UILabel = {
            let label = UILabel()
            label.textAlignment = .center
-        label.text = PFUser.current()?.object(forKey: "username") as? String
+           label.text = PFUser.current()?.object(forKey: "username") as? String
            label.font = UIFont.boldSystemFont(ofSize: 26)
            label.textColor = .white
            return label
@@ -82,7 +84,7 @@ class ProfileViewController: UIViewController {
         self.performSegue(withIdentifier: "toEdit", sender: self)
     }
     @objc func handleBack(sender: UIButton) {
-        self.performSegue(withIdentifier: "toEdit", sender: self)
+        self.performSegue(withIdentifier: "toHome", sender: self)
     }
     /*
     // MARK: - Navigation
