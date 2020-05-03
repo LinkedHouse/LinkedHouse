@@ -25,7 +25,11 @@ class FeedViewController: UIViewController {
         let loginViewController = main.instantiateViewController(identifier: "loginViewController")
         let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
         delegate.window?.rootViewController = loginViewController
+        print("hello")
     }
+    
+    
+    // this is a commit test
     /*
     // MARK: - Navigation
 
