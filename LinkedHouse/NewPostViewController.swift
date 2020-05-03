@@ -11,12 +11,12 @@ import AlamofireImage
 import Parse
 
 class NewPostViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var postTitle: UITextField!
     
@@ -25,6 +25,7 @@ class NewPostViewController: UIViewController, UINavigationControllerDelegate, U
     @IBAction func onCancel(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
     @IBAction func onPost(_ sender: Any) {
         let post = PFObject(className: "Posts")
         let imageData = imageView.image!.pngData()
@@ -32,6 +33,7 @@ class NewPostViewController: UIViewController, UINavigationControllerDelegate, U
         
         post["Title"] = postTitle.text!
         post["Image"] = file
+        post["author"] = PFUser.current()!
         post["Description"] = postDescription.text!
         post.saveInBackground { (success, error) in
             if(success){
@@ -42,6 +44,8 @@ class NewPostViewController: UIViewController, UINavigationControllerDelegate, U
         }
     }
    
+    
+    
     @IBAction func onCameraButton(_ sender: Any) {
         let picker = UIImagePickerController()
         picker.delegate = self

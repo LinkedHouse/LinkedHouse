@@ -15,10 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
         Parse.initialize(
                    with: ParseClientConfiguration(block: { (configuration: ParseMutableClientConfiguration) -> Void in
                        configuration.applicationId = "LinkedHouse"
-                       configuration.server = "https://linkedhouse.herokuapp.com/parse"
-                   })
-               )
+                    configuration.server = "https://calm-beyond-71881.herokuapp.com/parse"})
         // Override point for customization after application launch.
+        )
         return true
     }
 

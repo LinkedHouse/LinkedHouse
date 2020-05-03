@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -188,6 +188,7 @@
         <!--Feed View Controller-->
         <scene sceneID="ua6-U6-s3h">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZy-hp-qsg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController modalPresentationStyle="fullScreen" id="bxf-gh-zyi" customClass="FeedViewController" customModule="LinkedHouse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K2E-Sd-Y5c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -211,6 +212,58 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tFM-gA-amM">
+                                <rect key="frame" x="20" y="88" width="374" height="743"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="527" id="rtV-lM-gvG" customClass="PostCell" customModule="LinkedHouse" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="527"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rtV-lM-gvG" id="Ign-mZ-F4p">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="527"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Haihao" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Du-G2-vDD">
+                                                    <rect key="frame" x="8" y="459" width="53.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Today is Sunday" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYo-jB-j6y">
+                                                    <rect key="frame" x="69" y="458" width="124.5" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XTU-P1-MNg">
+                                                    <rect key="frame" x="20" y="36" width="334" height="406"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="XTU-P1-MNg" secondAttribute="height" multiplier="179:113" id="YvY-qs-5zO"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XTU-P1-MNg" firstAttribute="top" secondItem="Ign-mZ-F4p" secondAttribute="top" constant="32" id="4Lv-wq-EqB"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eYo-jB-j6y" secondAttribute="bottom" constant="8" id="GDb-bd-oJe"/>
+                                                <constraint firstItem="1Du-G2-vDD" firstAttribute="top" secondItem="XTU-P1-MNg" secondAttribute="bottom" constant="8.5" id="Uxw-w4-23t"/>
+                                                <constraint firstItem="eYo-jB-j6y" firstAttribute="leading" secondItem="1Du-G2-vDD" secondAttribute="trailing" constant="8" id="WMK-ra-FKI"/>
+                                                <constraint firstItem="eYo-jB-j6y" firstAttribute="top" secondItem="XTU-P1-MNg" secondAttribute="bottom" constant="8" id="czr-i2-Tb4"/>
+                                                <constraint firstAttribute="trailing" secondItem="XTU-P1-MNg" secondAttribute="trailing" constant="8" id="lZo-X6-hOv"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1Du-G2-vDD" secondAttribute="bottom" constant="8" id="q8S-5S-usE"/>
+                                                <constraint firstItem="1Du-G2-vDD" firstAttribute="centerY" secondItem="eYo-jB-j6y" secondAttribute="centerY" id="qNO-g6-5ww"/>
+                                                <constraint firstItem="1Du-G2-vDD" firstAttribute="leading" secondItem="Ign-mZ-F4p" secondAttribute="leading" constant="8" id="tRh-8s-QPC"/>
+                                                <constraint firstItem="XTU-P1-MNg" firstAttribute="leading" secondItem="Ign-mZ-F4p" secondAttribute="leading" constant="8" id="vSf-sE-gKS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="captionLabel" destination="eYo-jB-j6y" id="lpo-GW-hqc"/>
+                                            <outlet property="photoView" destination="XTU-P1-MNg" id="zwk-2L-nhh"/>
+                                            <outlet property="usernameLabel" destination="1Du-G2-vDD" id="lcO-Ac-gCW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Jgp-hn-4kb"/>
@@ -223,8 +276,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="tFM-gA-amM" id="5x7-9t-3GU"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NZy-hp-qsg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1926.0869565217392" y="113.83928571428571"/>
         </scene>
@@ -409,11 +464,11 @@
             <point key="canvasLocation" x="1235" y="838"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="logo" width="477" height="174"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="msK-af-8a6"/>
         <segue reference="S3C-4c-QxU"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="logo" width="477" height="174"/>
+    </resources>
 </document>
