@@ -364,7 +364,7 @@
                     <connections>
                         <outlet property="IntroLabel" destination="VFL-fk-mCK" id="fpC-aH-791"/>
                         <outlet property="profileImageView" destination="xKP-7W-T1O" id="gvK-FR-ggX"/>
-                        <segue destination="bxf-gh-zyi" kind="presentation" identifier="toHome" id="l05-0y-ndx"/>
+                        <segue destination="bxf-gh-zyi" kind="show" identifier="toHome" id="l05-0y-ndx"/>
                         <segue destination="nSU-HR-lpt" kind="presentation" identifier="toEdit" id="VTK-4z-ixT"/>
                     </connections>
                 </viewController>
@@ -414,6 +414,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="msK-af-8a6"/>
-        <segue reference="S3C-4c-QxU"/>
+        <segue reference="l05-0y-ndx"/>
     </inferredMetricsTieBreakers>
 </document>

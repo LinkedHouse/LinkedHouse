@@ -23,11 +23,17 @@ class ProfileViewController: UIViewController {
             let Introduction = PFUser.current()?.object(forKey: "Intro") as! String
             IntroLabel.text = Introduction
         }
+        else{
+            IntroLabel.text = "Hello, nice to meet you!"
+        }
         if(PFUser.current()?.object(forKey: "image") != nil){
             let imageFile = PFUser.current()?.object(forKey: "image")as! PFFileObject
             let urlString = imageFile.url!
             let url = URL(string: urlString)!
             self.profileImageView.af_setImage(withURL: url)
+        }
+        else{
+            self.profileImageView.image = UIImage(named: "default user");
         }
         view.addSubview(containerView)
         containerView.anchor(top: view.topAnchor, left: view.leftAnchor,

@@ -22,12 +22,18 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
             IntroductionTextField.text = Introduction
             
         }
+         else{
+            IntroductionTextField.text = "Hello, nice to meet you!"
+        }
         
         if(PFUser.current()?.object(forKey: "image") != nil){
             let imageFile = PFUser.current()?.object(forKey: "image")as! PFFileObject
             let urlString = imageFile.url!
             let url = URL(string: urlString)!
             self.profilePhotoImageView.af_setImage(withURL: url)
+        }
+        else{
+            self.profilePhotoImageView.image = UIImage(named: "default user");
         }
         view.addSubview(containerView)
         containerView.anchor(top: view.topAnchor, left: view.leftAnchor,
