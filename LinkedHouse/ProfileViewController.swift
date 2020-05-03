@@ -27,6 +27,7 @@ class ProfileViewController: UIViewController {
             let imageFile = PFUser.current()?.object(forKey: "image")as! PFFileObject
             let urlString = imageFile.url!
             let url = URL(string: urlString)!
+            print(url)
             self.profileImageView.af_setImage(withURL: url)
         }
         view.addSubview(containerView)

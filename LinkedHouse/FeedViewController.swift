@@ -70,6 +70,7 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let url = URL(string:urlString)!
         print(url);
+        
         cell.photoView.af_setImage(withURL: url)
         
         return cell

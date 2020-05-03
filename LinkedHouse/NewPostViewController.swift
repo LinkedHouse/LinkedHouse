@@ -29,8 +29,9 @@ class NewPostViewController: UIViewController, UINavigationControllerDelegate, U
     @IBAction func onPost(_ sender: Any) {
         let post = PFObject(className: "Posts")
         let imageData = imageView.image!.pngData()
-        let file = PFFileObject(data: imageData!)
+//        let file = PFFileObject(data: imageData!)
         
+        let file = PFFileObject(name: "image.png", data: imageData!)
         post["Title"] = postTitle.text!
         post["Image"] = file
         post["author"] = PFUser.current()!
